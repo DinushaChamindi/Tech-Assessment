@@ -4,3 +4,10 @@ Project done by codeigniter frame work using php
     2.Create Database  and name as "llsdb".
     3. Export sql file.
     4.Use below link to go to home page http://localhost/LibrarySolutionSystem/
+
+
+
+email  				Password 	UserType
+member@gmail.com	user@123	member
+user@gmail.com		user@123	User(Librarian)
+
