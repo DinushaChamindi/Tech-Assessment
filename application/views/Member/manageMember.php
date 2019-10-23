@@ -102,8 +102,7 @@
                                 <div class="form-group">
                                     <label for="Type">Type</label>
                                     <select required id="type" name="type" class="form-control form-control-lg form-control-a" >
-                                        <option value="member"> Member </option>
-                                        <option value="user"> User </option>
+                                      
                                     </select>
                                 </div>
                             </div>
@@ -145,13 +144,15 @@
                 document.getElementById('Contactno').value = obj.contactNo + "";
                 document.getElementById('address').value = obj.address + "";
                 document.getElementById('email').value = obj.email + "";
-                document.getElementById('type').value = obj.type + "";
-                if (obj.type) {
-                    var type = "User";
+               //document.getElementById('type').value = obj.type + "";
+                alert(obj.type);
+                if (obj.type==1) {
+                 
+                    $('#type').append('<option value="member"> Member </option><option selected value="user"> User </option>');
                 } else {
-                    type = "Member";
+                    $('#type').append('<option selected value="member"> Member </option><option value="user"> User </option>');
                 }
-                $('#type').append("<option>" + type + "</option>")
+                
                 document.getElementById('mid').value = id;
 
 
