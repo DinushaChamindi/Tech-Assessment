@@ -15,7 +15,7 @@ and open the template in the editor.
 .form-a .form-control {
     border-radius: 0;
     font-size: 0.9rem !important;
-    /* font-weight: 300; */
+    font-weight: 300;
 
 }
 .btn.btn-a, .btn.btn-b {
